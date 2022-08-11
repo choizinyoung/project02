@@ -48,11 +48,29 @@
   );
   height: 80px;
   overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+.header_nav.active {
+  background: linear-gradient(
+    rgba(255, 255, 134, 0.7) 80px,
+    rgba(255, 255, 255, 0.5) 81px,
+    rgba(255, 255, 255, 0.5)
+  );
+  height: 80px;
+  overflow: hidden;
+}
+.header_nav.active a,.header_nav.active li {
+  color: #1b1b1b;
 }
 .header_nav nav > ul > li ~ li {
   line-height: 80px;
   margin-right: 20px;
   position: relative;
+  width: 140px;
+  text-align: center;
+}
+.header_nav nav > ul > li ul li {
+  line-height: 30px;
 }
 .header_nav nav > ul > li.logo > h1 {
   text-indent: -99999999px;
@@ -63,7 +81,7 @@
   background: url(../img/logo-pc.png) no-repeat top;
   width: 142px;
   height: 35px;
-  margin-right: 400px;
+  margin-right: 320px;
 }
 .header_nav nav > ul > li > h4 > a {
   text-align: center;

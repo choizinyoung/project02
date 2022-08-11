@@ -22,6 +22,9 @@ li {
 .fr {
     float: right;
 }
+body {
+    overflow-y: scroll;
+}
 
 /* layout bg color */
 .bg1 {background-color: lightcoral;}
