@@ -9,69 +9,72 @@
 }
 #header {
   width: 100%;
-  height: 145px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(255, 255, 134, 0.4);
+  height: 110px;
+  z-index: 100;
 }
-#header_top {
+.header_top {
   width: 100%;
   height: 30px;
   margin: 0 auto;
 }
-#header_top .header_link {
+.header_top .header_link {
   width: 220px;
 }
-#header_top .header_link a {
+.header_top .header_link a {
   color: #1b1b1b;
   line-height: 30px;
 }
-#header_top .header_link a:first-child {
+.header_top .header_link a:first-child {
   margin-right: 20px;
 }
-#header_top .header_link a:first-child::after {
+.header_top .header_link a:first-child::after {
   content: "|";
   display: inline-block;
   font-size: 8px;
   padding-left: 15px;
 }
-#header_nav {
+.header_nav {
   width: 100%;
-  height: 115px;
-}
-#header_nav .width_h {
-  height: 115px;
-  display: flex;
-  justify-content: space-between;
-}
-#header_nav .width_h .logo h1 {
-  text-indent: -99999999px;
-}
-#header_nav .width_h .logo a {
-  display: block;
-  background: url(../img/logo-pc.png) no-repeat center center;
-  width: 142px;
-  height: 35px;
-}
-#header_nav .width_h .navbar ul li h4 a {
-  display: inline-block;
-  font-size: 20px;
-  color: #1b1b1b;
-  width: fit-content;
-  height: 115px;
-  padding-right: 50px;
-  line-height: 115px;
-}
-#header_nav .width_h .navbar ul li h4 a:hover .depth2 {
-  height: auto;
-  display: block;
-  z-index: 700;
-}
-#header_nav .width_h .navbar ul li:last-child h4 a {
-  padding-right: 0;
-}
-#header_nav .width_h .navbar ul li .depth2 {
-  width: 120px;
-  height: 0;
+  position: relative;
+  background: linear-gradient(
+    rgba(255, 255, 134, 0.7) 80px,
+    rgba(255, 255, 255, 0.5) 81px,
+    rgba(255, 255, 255, 0.5)
+  );
+  height: 80px;
   overflow: hidden;
 }
+.header_nav nav > ul > li ~ li {
+  line-height: 80px;
+  margin-right: 20px;
+  position: relative;
+}
+.header_nav nav > ul > li.logo > h1 {
+  text-indent: -99999999px;
+  font-size: 16px;
+}
+.header_nav nav > ul > li.logo > a {
+  display: block;
+  background: url(../img/logo-pc.png) no-repeat top;
+  width: 142px;
+  height: 35px;
+  margin-right: 400px;
+}
+.header_nav nav > ul > li > h4 > a {
+  text-align: center;
+  font-size: 20px;
+  color: #1b1b1b;
+}
+.header_nav nav > ul > li ul {
+  position: absolute;
+  width: 100%;
+}
+
 /*================#container==================*/
 .search_wrap {
   margin: 0 auto;
@@ -108,6 +111,7 @@
   width: 100%;
   height: 650px;
   object-fit: cover;
+  z-index: 1;
 }
 .banner img {
   height: 650px;

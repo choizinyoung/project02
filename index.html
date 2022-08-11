@@ -1,247 +1,310 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>빙그레</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>빙그레</title>
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/common.css" />
-</head>
-
-<body>
-  <div id="wrap">
-    <header id="header" class="bg2">
-      <div id="header_top" class="bg1 cf">
-        <div class="width_h">
-          <div class="header_link fr">
-            <a href="#link" class="fl">구매포털시스템</a>
-            <a href="#link" class="fl">인재채용</a>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="header_top cf">
+          <div class="width_h">
+            <div class="header_link fr">
+              <a href="#link" class="fl">구매포털시스템</a>
+              <a href="#link" class="fl">인재채용</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="header_nav" class="bg3">
-        <div class="width_h">
-          <div class="logo fl">
-            <h1>LOGO</h1>
-            <a href=""></a>
-          </div>
-          <nav class="navbar">
+        <div class="header_nav">
+          <nav class="width_h">
             <ul class="cf">
+              <li class="logo fl">
+                <h1>LOGO</h1>
+                <a href="#"></a>
+              </li>
               <li class="fl">
                 <h4><a href="#">회사소개</a></h4>
-                <ul class="depth2">
-                  <li><a href="#">CEO인사말</a></li>
-                  <li><a href="#">경영이념</a></li>
-                  <li><a href="#">사업분야</a></li>
-                  <li><a href="#">히스토리</a></li>
-                </ul>
+                <div class="depth2">
+                  <ul class="submenu fl">
+                    <li><a href="#">CEO인사말</a></li>
+                    <li><a href="#">경영이념</a></li>
+                    <li><a href="#">사업분야</a></li>
+                    <li><a href="#">히스토리</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="fl">
                 <h4><a href="#">제품소개</a></h4>
-                <ul class="depth2">
-                  <li><a href="#">전체보기</a></li>
-                  <li><a href="#">아이스크림</a></li>
-                  <li><a href="#">우유/치즈</a></li>
-                  <li><a href="#">발효유</a></li>
-                  <li><a href="#">커피</a></li>
-                  <li><a href="#">음료</a></li>
-                  <li><a href="#">주스</a></li>
-                  <li><a href="#">스낵/디저트</a></li>
-                  <li><a href="#">건강지향식품</a></li>
-                  <li><a href="#">수출제품</a></li>
-                </ul>
+                <div class="depth2">
+                  <ul class="submenu fl">
+                    <li><a href="#">전체보기</a></li>
+                    <li><a href="#">아이스크림</a></li>
+                    <li><a href="#">우유/치즈</a></li>
+                    <li><a href="#">발효유</a></li>
+                    <li><a href="#">커피</a></li>
+                    <li><a href="#">음료</a></li>
+                    <li><a href="#">주스</a></li>
+                    <li><a href="#">스낵/디저트</a></li>
+                    <li><a href="#">건강지향식품</a></li>
+                    <li><a href="#">수출제품</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="fl">
                 <h4><a href="#">지속가능경영</a></h4>
-                <ul class="depth2">
-                  <li><a href="#">지속가능경영 체계</a></li>
-                  <li><a href="#">Eco-Friendly</a></li>
-                  <li><a href="#">Shared Value</a></li>
-                  <li><a href="#">Global Integrity</a></li>
-                  <li><a href="#">윤리준법경영</a></li>
-                  <li><a href="#">사회공헌</a></li>
-                  <li><a href="#">보고서 및 정책</a></li>
-                </ul>
+                <div class="depth2">
+                  <ul class="submenu fl">
+                    <li><a href="#">지속가능경영 체계</a></li>
+                    <li><a href="#">Eco-Friendly</a></li>
+                    <li><a href="#">Shared Value</a></li>
+                    <li><a href="#">Global Integrity</a></li>
+                    <li><a href="#">윤리준법경영</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">보고서 및 정책</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="fl">
                 <h4><a href="#">투자정보</a></h4>
-                <ul class="depth2">
-                  <li><a href="#">전자공고</a></li>
-                  <li><a href="#">주식정보</a></li>
-                  <li><a href="#">공시정보</a></li>
-                  <li><a href="#">재무정보</a></li>
-                  <li><a href="#">IR 정보</a></li>
-                </ul>
+                <div class="depth2">
+                  <ul class="submenu fl">
+                    <li><a href="#">전자공고</a></li>
+                    <li><a href="#">주식정보</a></li>
+                    <li><a href="#">공시정보</a></li>
+                    <li><a href="#">재무정보</a></li>
+                    <li><a href="#">IR 정보</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="fl">
                 <h4><a href="#">고객센터</a></h4>
-                <ul class="depth2">
-                  <li><a href="#">고객상담</a></li>
-                  <li><a href="#">사이버 부정신고</a></li>
-                  <li><a href="#">안전신문고</a></li>
-                  <li><a href="#">개인정보처리방침</a></li>
-                </ul>
+                <div class="depth2">
+                  <ul class="submenu fl">
+                    <li><a href="#">고객상담</a></li>
+                    <li><a href="#">사이버 부정신고</a></li>
+                    <li><a href="#">안전신문고</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                  </ul>
+                </div>
               </li>
+              <li class="lang_pop fl">KR</li>
+              <li class="hamburger fl"><span></span><span></span><span></span></li>
             </ul>
           </nav>
-          <div class="lang_pop"></div>
         </div>
-      </div>
-    </header>
-    <div id="container" class="cf">
-      <div class="slides bg4">
-        <div class="swiper Swiper1">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide banner"><img src="./img/banner1.jpg" alt=""></div>
-            <div class="swiper-slide banner">Slide 2</div>
-            <div class="swiper-slide banner">Slide 3</div>
+      </header>
+      <div id="container" class="cf">
+        <div class="slides bg4">
+          <div class="swiper Swiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide banner">
+                <img src="./img/banner1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide banner">Slide 2</div>
+              <div class="swiper-slide banner">Slide 3</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
         </div>
-      </div>
-      <div class="search_wrap cf">
-        <img src="./img/search_icon.png" alt="검색창아이콘">
-        <form action="#" method="post">
-          <input type="search" placeholder="검색어를 입력해주세요" />
-          <button type="submit">SEARCH</button>
-        </form>
-      </div>
-      <div class="container content1 bg5 cf">
-        <h2>행복한 빙그레의 맛</h2>
-        <div class="swiper Swiper2">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide slide_size1">
-              <a href="#"><img src="./img/sec02_img01.png" alt="아이스크림" />아이스크림</a>
+        <div class="search_wrap cf">
+          <img src="./img/search_icon.png" alt="검색창아이콘" />
+          <form action="#" method="post">
+            <input type="search" placeholder="검색어를 입력해주세요" />
+            <button type="submit">SEARCH</button>
+          </form>
+        </div>
+        <div class="container content1 bg5 cf">
+          <h2>행복한 빙그레의 맛</h2>
+          <div class="swiper Swiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide_size1">
+                <a href="#"
+                  ><img
+                    src="./img/sec02_img01.png"
+                    alt="아이스크림"
+                  />아이스크림</a
+                >
+              </div>
+              <div class="swiper-slide slide_size1">
+                <a href="#"
+                  ><img src="./img/sec02_img02.png" alt="" /><span
+                    >발효유</span
+                  ></a
+                >
+              </div>
+              <div class="swiper-slide slide_size1">
+                <a href="#"
+                  ><img src="./img/sec02_img03.png" alt="" /><span
+                    >음료</span
+                  ></a
+                >
+              </div>
+              <div class="swiper-slide slide_size1">
+                <a href="#"
+                  ><img src="./img/sec02_img04.png" alt="" /><span
+                    >우유/치즈</span
+                  ></a
+                >
+              </div>
+              <div class="swiper-slide slide_size1">
+                <a href="#"
+                  ><img src="./img/sec02_img05.png" alt="" /><span
+                    >커피</span
+                  ></a
+                >
+              </div>
+              <div class="swiper-slide slide_size1">
+                <a href="#"
+                  ><img src="./img/sec02_img06.png" alt="" /><span
+                    >주스</span
+                  ></a
+                >
+              </div>
+              <div class="swiper-slide slide_size1">
+                <a href="#"
+                  ><img src="./img/sec02_img07.png" alt="" /><span
+                    >스낵/디저트</span
+                  ></a
+                >
+              </div>
+              <div class="swiper-slide slide_size1">
+                <a href="#"
+                  ><img src="./img/sec02_img08.png" alt="" /><span
+                    >수출제품</span
+                  ></a
+                >
+              </div>
+              <div class="swiper-slide slide_size1">
+                <a href="#"
+                  ><img src="./img/sec02_img09.png" alt="" /><span
+                    >건강지향식품</span
+                  ></a
+                >
+              </div>
             </div>
-            <div class="swiper-slide slide_size1">
-              <a href="#"><img src="./img/sec02_img02.png" alt="" /><span>발효유</span></a>
-            </div>
-            <div class="swiper-slide slide_size1">
-              <a href="#"><img src="./img/sec02_img03.png" alt="" /><span>음료</span></a>
-            </div>
-            <div class="swiper-slide slide_size1">
-              <a href="#"><img src="./img/sec02_img04.png" alt="" /><span>우유/치즈</span></a>
-            </div>
-            <div class="swiper-slide slide_size1">
-              <a href="#"><img src="./img/sec02_img05.png" alt="" /><span>커피</span></a>
-            </div>
-            <div class="swiper-slide slide_size1">
-              <a href="#"><img src="./img/sec02_img06.png" alt="" /><span>주스</span></a>
-            </div>
-            <div class="swiper-slide slide_size1">
-              <a href="#"><img src="./img/sec02_img07.png" alt="" /><span>스낵/디저트</span></a>
-            </div>
-            <div class="swiper-slide slide_size1">
-              <a href="#"><img src="./img/sec02_img08.png" alt="" /><span>수출제품</span></a>
-            </div>
-            <div class="swiper-slide slide_size1">
-              <a href="#"><img src="./img/sec02_img09.png" alt="" /><span>건강지향식품</span></a>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
         </div>
-      </div>
-      <div class="container content2 bg5">
-        <h2>Brand Shop</h2>
-        <div class="swiper swiper3">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide slide_size2">
-              <a href="#"><img src="./img/sec02_logo01.png" alt="더단백" /></a>
+        <div class="container content2 bg5">
+          <h2>Brand Shop</h2>
+          <div class="swiper swiper3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide_size2">
+                <a href="#"
+                  ><img src="./img/sec02_logo01.png" alt="더단백"
+                /></a>
+              </div>
+              <div class="swiper-slide slide_size2">
+                <a href="#"
+                  ><img src="./img/sec02_logo02.png" alt="아카페라"
+                /></a>
+              </div>
+              <div class="swiper-slide slide_size2">
+                <a href="#"
+                  ><img src="./img/sec02_logo03.png" alt="요플레"
+                /></a>
+              </div>
+              <div class="swiper-slide slide_size2">
+                <a href="#"
+                  ><img src="./img/sec02_logo04.png" alt="바나나맛우유"
+                /></a>
+              </div>
+              <div class="swiper-slide slide_size2">
+                <a href="#"
+                  ><img src="./img/sec02_logo05.png" alt="마노플랜"
+                /></a>
+              </div>
+              <div class="swiper-slide slide_size2">
+                <a href="#"
+                  ><img src="./img/sec02_logo07.png" alt="비바시티"
+                /></a>
+              </div>
             </div>
-            <div class="swiper-slide slide_size2">
-              <a href="#"><img src="./img/sec02_logo02.png" alt="아카페라" /></a>
-            </div>
-            <div class="swiper-slide slide_size2">
-              <a href="#"><img src="./img/sec02_logo03.png" alt="요플레" /></a>
-            </div>
-            <div class="swiper-slide slide_size2">
-              <a href="#"><img src="./img/sec02_logo04.png" alt="바나나맛우유" /></a>
-            </div>
-            <div class="swiper-slide slide_size2">
-              <a href="#"><img src="./img/sec02_logo05.png" alt="마노플랜" /></a>
-            </div>
-            <div class="swiper-slide slide_size2">
-              <a href="#"><img src="./img/sec02_logo07.png" alt="비바시티" /></a>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="container content3 cf">
+          <div class="service cf">
+            <a href="#" class="fl bg1">
+              <h4>사이버신고</h4>
+              <p></p>
+            </a>
+            <a href="#" class="fl bg1">
+              <h4>국민신문고</h4>
+              <p></p>
+            </a>
+          </div>
+          <div class="qna cf">
+            <h3 class="fl">자주묻는질문</h3>
+            <a href="#link" class="fr">더보기</a>
+            <ul class="Question fl">
+              <li><a href="#">Q</a></li>
+              <li><a href="#">Q</a></li>
+              <li><a href="#">Q</a></li>
+            </ul>
+            <ul class="Answer fl">
+              <li><a href="#">A</a></li>
+              <li><a href="#">A</a></li>
+              <li><a href="#">A</a></li>
+            </ul>
+            <h3>빙그레 임직원 및 종사자 온라인제보</h3>
+            <div class="email"></div>
+            <div class="tel"></div>
+          </div>
         </div>
       </div>
-      <div class="container content3 cf">
-        <div class="service cf">
-          <a href="#" class="fl bg1">
-            <h4>사이버신고</h4>
-            <p></p>
-          </a>
-          <a href="#" class="fl bg1">
-            <h4>국민신문고</h4>
-            <p></p>
-          </a>
+      <footer id="footer">
+        <div class="footer_wrap">
+          <div class="footer_1"></div>
+          <div class="footer_2"></div>
+          <div class="footer_3"></div>
         </div>
-        <div class="qna cf">
-          <h3 class="fl">자주묻는질문</h3>
-          <a href="#link" class="fr">더보기</a>
-          <ul class="Question fl">
-            <li><a href="#">Q</a></li>
-            <li><a href="#">Q</a></li>
-            <li><a href="#">Q</a></li>
-          </ul>
-          <ul class="Answer fl">
-            <li><a href="#">A</a></li>
-            <li><a href="#">A</a></li>
-            <li><a href="#">A</a></li>
-          </ul>
-          <h3>빙그레 임직원 및 종사자 온라인제보</h3>
-          <div class="email"></div>
-          <div class="tel"></div>
-        </div>
-      </div>
+      </footer>
     </div>
-    <footer id="footer">
-      <div class="footer_wrap">
-        <div class="footer_1"></div>
-        <div class="footer_2"></div>
-        <div class="footer_3"></div>
-      </div>
-    </footer>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper1 = new Swiper(".Swiper1", {
-      spaceBetween: 0,
-      centeredSlides: true,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-    var swiper2 = new Swiper(".Swiper2", {
-      slidesPerView: 6,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-</body>
-
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".Swiper1", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".Swiper2", {
+        slidesPerView: 6,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
 </html>
