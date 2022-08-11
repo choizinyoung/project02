@@ -13,7 +13,7 @@
   left: 0;
   right: 0;
   top: 0;
-  background-color: rgba(255, 255, 134, 0.4);
+  background-color: rgba(255, 255, 134, 0.6);
   height: 110px;
   z-index: 100;
 }
@@ -59,7 +59,8 @@
   height: 80px;
   overflow: hidden;
 }
-.header_nav.active a,.header_nav.active li {
+.header_nav.active a,
+.header_nav.active li {
   color: #1b1b1b;
 }
 .header_nav nav > ul > li ~ li {
@@ -94,10 +95,8 @@
 }
 
 /*================#container==================*/
-.search_wrap {
-  margin: 0 auto;
-  width: 1000px;
-  height: 50px;
+#container {
+  margin-top: 34px;
 }
 .swiper {
   width: 100%;
@@ -123,21 +122,30 @@
   -webkit-align-items: center;
   align-items: center;
 }
-
+.Swiper1 .swiper-button-next,
+.Swiper1 .swiper-button-prev {
+  color: rgb(255, 255, 134);
+}
 .banner {
   display: block;
   width: 100%;
-  height: 650px;
-  object-fit: cover;
+  height: 770px;
+  object-fit: contain;
   z-index: 1;
 }
 .banner img {
-  height: 650px;
+  width: 100%;
+  height: 100vh;
+}
+.search_wrap {
+  margin: 0 auto;
+  width: 1000px;
+  height: 50px;
 }
 .search_wrap {
   width: 1000px;
   height: 70px;
-  margin: 30px auto;
+  margin: 50px auto;
   padding: 0 15px 0 55px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
   border-radius: 50px;
@@ -157,6 +165,7 @@
   margin-left: 10px;
   margin-top: 15px;
   padding-left: 10px;
+  font-weight: 200;
 }
 .search_wrap button {
   width: 180px;
@@ -165,27 +174,43 @@
   border-radius: 50px;
   margin-top: 7px;
   margin-left: 18px;
+  background: #e0462e;
   cursor: pointer;
+  color: #fff;
 }
 /*---content1---*/
 .content1 {
+  margin-top: 250px;
   height: 500px;
   text-align: center;
 }
 .content1 h2 {
   font-size: 38px;
-  margin-bottom: 20px;
+}
+.content1 .slide_size1 span {
+  display: block;
+  width: 242px;
+  height: 46px;
+  background-color: rgba(0, 0, 0, 0.05);
+  line-height: 46px;
+  color: #1b1b1b;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 200px;
+  margin-top: 5px;
 }
 .slide_size1 {
-  height: 250px;
-  margin-top: 110px;
+  height: 242px;
+  margin-top: 140px;
   background: none;
 }
 .slide_size1 img {
-  height: 250px;
+  height: 242px;
 }
 /*---content2---*/
 .content2 {
+  margin-top: 250px;
   height: 500px;
   text-align: center;
 }
