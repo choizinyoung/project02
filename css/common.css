@@ -13,21 +13,23 @@
   left: 0;
   right: 0;
   top: 0;
-  background-color: rgba(255, 255, 134, 0.6);
   height: 110px;
   z-index: 100;
 }
 .header_top {
   width: 100%;
-  height: 30px;
+  height: 33px;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .header_top .header_link {
   width: 220px;
 }
 .header_top .header_link a {
-  color: #1b1b1b;
+  color: #fff;
   line-height: 30px;
+  font-weight: 100;
+  font-size: 16px;
 }
 .header_top .header_link a:first-child {
   margin-right: 20px;
@@ -42,26 +44,30 @@
   width: 100%;
   position: relative;
   background: linear-gradient(
-    rgba(255, 255, 134, 0.7) 80px,
-    rgba(255, 255, 255, 0.5) 81px,
-    rgba(255, 255, 255, 0.5)
+    rgba(0, 0, 0, 0.2) 80px,
+    rgba(0, 0, 0, 0.1) 81px,
+    rgba(0, 0, 0, 0.1)
   );
   height: 80px;
   overflow: hidden;
   transition: all 1s ease-in-out;
+  
+}
+.header_nav li a:hover {
+  color: rgb(255, 255, 134);
 }
 .header_nav.active {
   background: linear-gradient(
-    rgba(255, 255, 134, 0.7) 80px,
-    rgba(255, 255, 255, 0.5) 81px,
-    rgba(255, 255, 255, 0.5)
+    rgba(0, 0, 0, 0.6) 80px,
+    rgba(0, 0, 0, 0.6) 81px,
+    rgba(0, 0, 0, 0.6)
   );
   height: 80px;
   overflow: hidden;
 }
 .header_nav.active a,
 .header_nav.active li {
-  color: #1b1b1b;
+  color: #fff;
 }
 .header_nav nav > ul > li ~ li {
   line-height: 80px;
@@ -75,29 +81,57 @@
 }
 .header_nav nav > ul > li.logo > h1 {
   text-indent: -99999999px;
-  font-size: 16px;
+  font-size: 12px;
 }
 .header_nav nav > ul > li.logo > a {
   display: block;
-  background: url(../img/logo-pc.png) no-repeat top;
+  background: url(../img/logo_pc.png) no-repeat;
   width: 142px;
   height: 35px;
+  background-size: contain;
   margin-right: 320px;
 }
 .header_nav nav > ul > li > h4 > a {
   text-align: center;
   font-size: 20px;
-  color: #1b1b1b;
+  color: #fff;
 }
 .header_nav nav > ul > li ul {
   position: absolute;
   width: 100%;
 }
-
-/*================#container==================*/
-#container {
-  margin-top: 34px;
+.header_nav nav > ul > li ul li a {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #fff;
+  font-weight: 200;
 }
+.header_nav nav > ul > li.lang_pop select {
+  width: 50px;
+  background: none;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 350px;
+  line-height: 80px;
+}
+.header_nav nav > ul > li.hamburger{
+  padding-top: 32px;
+  line-height: 80px;
+  width: 30px;
+  height: 20px;
+}
+.header_nav nav > ul > li.hamburger a span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  background: #fff;
+}
+.header_nav nav > ul > li.hamburger a span:nth-child(2) {
+  margin: 5px 0;
+}
+/*================#container==================*/
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -135,7 +169,7 @@
 }
 .banner img {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
 }
 .search_wrap {
   margin: 0 auto;

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      href="./css/swiper.css"
     />
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/common.css" />
@@ -97,8 +97,14 @@
                   </ul>
                 </div>
               </li>
-              <li class="lang_pop fl">KR</li>
-              <li class="hamburger fl"><span></span><span></span><span></span></li>
+              <li class="lang_pop fl">
+                <select>
+                  <option value="KR">KR</option>
+                  <option value="KR">EN</option>
+                  <option value="KR">CN</option>
+                </select> 
+              </li>
+              <li class="hamburger fr"><a href="#"><span></span><span></span><span></span></a></li>
             </ul>
           </nav>
         </div>
@@ -237,8 +243,8 @@
                 /></a>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next3"></div>
+            <div class="swiper-button-prev3"></div>
           </div>
         </div>
         <div class="container content3 cf">
@@ -283,33 +289,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
     
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".Swiper1", {
-        spaceBetween: 0,
-        centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      var swiper = new Swiper(".Swiper2", {
-        slidesPerView: 6,
-        spaceBetween: 20,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
   </body>
 </html>
