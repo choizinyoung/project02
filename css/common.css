@@ -158,12 +158,12 @@
 }
 .Swiper1 .swiper-button-next,
 .Swiper1 .swiper-button-prev {
-  color: rgb(255, 255, 134);
+  color: #e0462e;
 }
 .banner {
   display: block;
   width: 100%;
-  height: 770px;
+  height: 85vh;
   object-fit: contain;
   z-index: 1;
 }
@@ -172,14 +172,9 @@
   height: 110vh;
 }
 .search_wrap {
-  margin: 0 auto;
-  width: 1000px;
-  height: 50px;
-}
-.search_wrap {
   width: 1000px;
   height: 70px;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 0 15px 0 55px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
   border-radius: 50px;
@@ -220,8 +215,9 @@
 }
 .content1 h2 {
   font-size: 38px;
+  letter-spacing: -1;
 }
-.content1 .slide_size1 span {
+.content1 .slide_size1 span.ct1_mw {
   display: block;
   width: 242px;
   height: 46px;
@@ -230,57 +226,149 @@
   color: #1b1b1b;
   text-align: center;
   border-radius: 50px;
-  font-size: 18px;
-  font-weight: 200px;
+  font-size: 17px;
+  font-weight: 300;
   margin-top: 5px;
+  letter-spacing: -0.25px;
+}
+.content1 .slide_size1 span.ct1_hw {
+  display: none;
+}
+.content1 .Swiper2 .swiper-button-next,
+.content1 .Swiper2 .swiper-button-prev {
+  color: #1b1b1b;
 }
 .slide_size1 {
   height: 242px;
   margin-top: 140px;
   background: none;
 }
+.slide_size1 a{
+  transition: all 0.5s;
+}
+.slide_size1 a:hover {
+  margin-bottom: 25px;
+}
+.slide_size1 a:hover span.ct1_mw {
+  display: none;
+}
+.slide_size1 a:hover span.ct1_hw {
+  display: block;
+  background: #e0462e;
+  text-align: center;
+  width: 242px;
+  height: 46px;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 50px;
+  line-height: 46px;
+  font-weight: 200;
+}
 .slide_size1 img {
   height: 242px;
 }
 /*---content2---*/
 .content2 {
-  margin-top: 250px;
+  margin-top: 200px;
   height: 500px;
   text-align: center;
+  margin-bottom: 200px;
 }
 .content2 h2 {
+  width: 1650px;
   font-size: 38px;
-  margin-bottom: 40px;
+  letter-spacing: -1;
+  text-align: center;
 }
-.slide_size2 {
-  height: 250px;
+.content2 .Swiper3 .swiper-button-next,
+.content2 .Swiper3 .swiper-button-prev {
+  color: #1b1b1b;
+}
+
+.content2 .slide_size2 a{
+  width: 242px;
+  height: 242px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
 }
-.swiper3 .slide_size2 a img {
-  width: 150px;
+.content2 .slide_size2 span {
+  display: none;
 }
+.content2 .slide_size2 a:hover {
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  display: block;
+  position: relative;
+}
+.content2 .slide_size2 a:hover img {
+  position: absolute;
+  bottom: 140px;
+  left: 50%;
+  transform: scale(0.8) translateX(-60%);
+}
+.content2 .slide_size2 a:hover span.ct2_btn {
+  display: block;
+  background: #e0462e;
+  width: 217px;
+  height: 43px;
+  border-radius: 40px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 43px;
+  color:#fff;
+  font-size: 17px;
+  font-weight: 200;
+}
+.content2 .slide_size2 a:hover span.ct2_txt {
+  display: block;
+  width: 170px;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #1b1b1b;
+  font-weight: 200;
+  letter-spacing: -1;
+  font-size: 16px;
+}
+
 /*---content3---*/
 .content3 .service {
   width: 1310px;
   margin: 20px auto;
-}
-.content3 .service a {
-  display: block;
-  width: 635.34px;
-  height: 280px;
-  border-radius: 30px;
-}
-.content3 .service a:first-child {
-  margin-right: 38px;
-}
-.content3 .qna {
-  padding: 60px 45px;
-  width: 1218px;
-  height: 687px;
-  margin: 0px auto;
-  border: 1px solid #999;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  height: 852px;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
   border-radius: 50px;
+  padding: 60px 45px;
+  box-sizing: border-box;
+}
+.content3 h2 {
+  text-align: center;
+  font-size: 38px;
+  letter-spacing: -0.25;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.content3 .service .ct3_box {
+  display: block;
+  width: 590px;
+  height: 325px;
+  border-radius: 30px;
+  margin: 50px 10px 20px 10px;
+}
+.content3 .service .ct3_box:nth-child(1) {
+  background: url(../img/sec04_backimg01.png) no-repeat center;
+}
+.content3 .service .ct3_box:nth-child(2) {
+  background: url(../img/sec04_backimg02.png) no-repeat center;
 }
 .content3 .qna h3 {
   width: 1060px;

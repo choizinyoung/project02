@@ -42,7 +42,8 @@ var swiper = new Swiper(".Swiper1", {
 });
 var swiper2 = new Swiper(".Swiper2", {
   slidesPerView: 6,
-  spaceBetween: 20,
+  spaceBetween: 10,
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -51,6 +52,7 @@ var swiper2 = new Swiper(".Swiper2", {
 var swiper3 = new Swiper(".Swiper3", {
   slidesPerView: 6,
   spaceBetween: 20,
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
