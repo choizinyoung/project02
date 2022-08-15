@@ -209,7 +209,7 @@
 }
 /*---content1---*/
 .content1 {
-  margin-top: 250px;
+  margin-top: 200px;
   height: 500px;
   text-align: center;
 }
@@ -362,7 +362,8 @@
   width: 590px;
   height: 325px;
   border-radius: 30px;
-  margin: 50px 10px 20px 10px;
+  margin: 30px 10px 30px 10px;
+  padding: 45px 50px;
 }
 .content3 .service .ct3_box:nth-child(1) {
   background: url(../img/sec04_backimg01.png) no-repeat center;
@@ -370,23 +371,159 @@
 .content3 .service .ct3_box:nth-child(2) {
   background: url(../img/sec04_backimg02.png) no-repeat center;
 }
-.content3 .qna h3 {
-  width: 1060px;
-  height: 62px;
+.content3 .service .ct3_box h4 {
   font-size: 32px;
-  line-height: 62px;
-  margin: 0;
+  letter-spacing: -1.6px;
+  color: #1b1b1b;
+  padding-bottom: 30px;
 }
-.content3 .qna > a {
+.content3 .service .ct3_box h4.call {
+  font-size: 46.5px;
+  font-weight: 500;
+  line-height: 1;
+}
+.content3 .service .ct3_box p {
+  color: #1b1b1b;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: -1.5;
+}
+.content3 .service .ct3_box p span {
+  color: #e0462e;
+  font-weight: 400;
+  padding-left: 14px;
+}
+.content3 .service .ct3_box > span {
   display: block;
-  width: 150px;
-  height: 62px;
-  border: 1px solid #999;
+  width: 160px;
+  height: 43px;
+  background: #e0462e;
+  border: 1px solid rgba(224,223,226,0.6);
   text-align: center;
-  line-height: 62px;
-  border-radius: 50px;
+  line-height: 43px;
+  border-radius: 38px;
+  color: #fff;
+  margin-top: 60px;
 }
-
+.content3 .service .q_tit h4 {
+  width: 1040px;
+  color: #1b1b1b;
+  font-size: 26px;
+  margin-left: 10px;
+  line-height: 30px;
+}
+.content3 .service .q_tit .viewmore {
+  color: #1b1b1b;
+  display: block;
+  width: 160px;
+  height: 43px;
+  border: 1px solid rgba(224,223,226,0.6);
+  text-align: center;
+  line-height: 43px;
+  border-radius: 38px;
+}
+.content3 .service .q_tit .viewmore:hover {
+  background: #e0462e;
+  color: #fff;
+}
+.content3 .service .Question {
+  width: 1220px;
+  height: 260px;
+  margin-top: 30px;
+}
+.content3 .service .Question .q_box {
+  width: 560px;
+}
+.content3 .service .Question .q_box:nth-child(odd) {
+  margin-right: 90px;
+}
+.content3 .service .Question .q_box a {
+  display: block;
+  width: 560px;
+  height: 80px;
+  padding: 0 10px 0 30px;
+  text-align: left;
+  background: #f9f9f9;
+  line-height: 80px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  box-shadow: inset 1px 5px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.content3 .service .Question .q_box a span.ct3_q_txt {
+  display: inline-block;
+  color: #1b1b1b;
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: -1.5px;
+  width: 460px;
+  transition: all 0.5s;
+}
+.content3 .service .Question .q_box a span.ct3_q_arrow {
+  display: none;
+  transition: all 0.5s;
+}
+.content3 .service .Question .q_box a:hover span.ct3_q_txt {
+  font-weight: 500;
+}
+.content3 .service .Question .q_box a:hover span.ct3_q_arrow {
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  background-color: #e0462e;
+  border-radius: 47px;
+  line-height: 47px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.content3 .employee {
+  width: 1310px;
+  margin: 0 auto;
+}
+.content3 .employee h2 {
+  text-align: center;
+  font-size: 38px;
+  letter-spacing: -0.25;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+.content3 .employee .employee_box {
+  display: block;
+  width: 635px;
+  height: 230px;
+  margin-top: 30px;
+  background: #f9f9f9;
+  border-radius: 50px;
+  box-sizing: border-box;
+  box-shadow: inset 1px 1px 20px rgba(0, 0, 0, 0.1);
+  padding: 78px 25px 58px;
+}
+.content3 .employee .employee_box:nth-child(2) {
+  margin-right: 40px;
+}
+.content3 .employee .employee_box span {
+  display: block;
+  text-align: center;
+}
+.content3 .employee .employee_box span.employee_txt {
+  color: #1b1b1b;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -1.25;
+  margin-bottom: 30px;
+}
+.content3 .employee .employee_box span.employee_btn {
+  width: 160px;
+  height: 43px;
+  background: #e0462e;
+  border: 1px solid rgba(224,223,226,0.6);
+  border-radius: 43px;
+  color: #fff;
+  line-height: 43px;
+  margin: 0 auto;
+}
 /*=============footer============*/
 #footer {
   width: 100%;
