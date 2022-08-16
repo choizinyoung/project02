@@ -1,5 +1,5 @@
 //gnbmenu
-var mainmenu = $("nav>ul>li"), //원뎁스 li 할당
+var mainmenu = $(".header_nav>.width_h>ul>li"), //원뎁스 li 할당
   subMenu = mainmenu.find("ul"), //투뎁스 ul 할당
   header = $(".header_nav"), //.header_nav할당
   headerHeight = header.height(), //header높이 할당
@@ -39,54 +39,33 @@ var swiper = new Swiper(".Swiper1", {
 });
 var swiper2 = new Swiper(".Swiper2", {
   slidesPerView: 3,
-  grid: {
+  /*grid: {
     rows: 2,
-  },
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  },*/
+  spaceBetween: 0,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    801: {
-      slidesPerView: 5,
-      grid:{rows: 1,},
-      spaceBetween: 10,
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    },
-    1399: {
-      slidesPerView:6,
-    }
+    801: { slidesPerView: 4 },
+    1280: { slidesPerView: 5 },
+    1400: { slidesPerView: 6 },
   },
 });
 var swiper3 = new Swiper(".Swiper3", {
   slidesPerView: 3,
-  grid: {
-    rows: 2,
-  },
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    801: {
-      slidesPerView: 5,
-      grid:{rows: 1,},
-      spaceBetween: 10,
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    },
-    1399: {
-      slidesPerView:6,
-    }
+    801: { slidesPerView: 4 },
+    1280: { slidesPerView: 5 },
+    1400: { slidesPerView: 6 },
   },
 });
 

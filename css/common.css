@@ -52,7 +52,7 @@
   overflow: hidden;
   transition: all 1s ease-in-out;
 }
-.header_nav li a:hover {
+.header_nav .width_h ul li a:hover {
   color: rgb(255, 255, 134);
 }
 .header_nav.active {
@@ -68,20 +68,20 @@
 .header_nav.active li {
   color: #fff;
 }
-.header_nav nav > ul > li ~ li {
+.header_nav .width_h ul > li {
   line-height: 80px;
   position: relative;
   width: 160px;
   text-align: center;
 }
-.header_nav nav > ul > li ul li {
+.header_nav .width_h ul > li ul li {
   line-height: 30px;
 }
-.header_nav nav > ul > li.logo > h1 {
+.header_nav .width_h .logo > h1 {
   text-indent: -99999999px;
   font-size: 12px;
 }
-.header_nav nav > ul > li.logo > a {
+.header_nav .width_h .logo > a {
   display: block;
   background: url(../img/logo_pc.png) no-repeat;
   width: 142px;
@@ -89,46 +89,47 @@
   background-size: contain;
   margin-right: 330px;
 }
-.header_nav nav > ul > li > h4 > a {
+.header_nav .width_h ul > li > h4 > a {
   text-align: center;
   font-size: 1.25rem;
   color: #fff;
 }
-.header_nav nav > ul > li ul {
+.header_nav .width_h ul > li ul {
   position: absolute;
   width: 100%;
 }
-.header_nav nav > ul > li ul li a {
+.header_nav .width_h ul > li ul li a {
   line-height: 1.75;
   color: #fff;
   font-weight: 200;
 }
-.header_nav nav > ul > li.fr {
+.header_nav .width_h .menu_bar {
   width: 100px;
   height: 80px;
 }
-.header_nav nav > ul > li .lang_pop {
+.header_nav .width_h .menu_bar .lang_pop {
   width: 50px;
   background: none;
   font-size: 1rem;
   color: #fff;
   line-height: 80px;
-  margin-top: 25px;
+  margin-top: 27px;
 }
-.header_nav nav > ul > li .hamburger {
+.header_nav .width_h .menu_bar .hamburger {
   padding-top: 32px;
   line-height: 80px;
   width: 30px;
   height: 20px;
 }
-.header_nav nav > ul > li .hamburger span {
+.header_nav .width_h .menu_bar .hamburger span {
   display: block;
   width: 30px;
   height: 3px;
   border-radius: 5px;
   background: #fff;
+  box-sizing: border-box;
 }
-.header_nav nav > ul > li .hamburger span:nth-child(2) {
+.header_nav .width_h .menu_bar .hamburger span:nth-child(2) {
   margin: 5px 0;
 }
 /*================#container==================*/
@@ -212,7 +213,6 @@
 /*---content1---*/
 .content1 {
   margin-top: 200px;
-  height: 500px;
   text-align: center;
 }
 .content1 h2 {
@@ -277,7 +277,7 @@
   margin-top: 200px;
   height: 500px;
   text-align: center;
-  margin-bottom: 180px;
+  margin-bottom: 140px;
 }
 .content2 h2 {
   text-align: center;
@@ -666,25 +666,25 @@ footer #shop {
 
 /*tablet*/
 
-@media screen and (min-width:801px) and (max-width:1399px) {
-  #wrap .width_h {
-    width: 100%;
+@media screen and (min-width:1281px) and (max-width:1400px) {
+  .width_h {
+    width: 96%;
   }
-  .header_nav nav > ul > li.logo > a {
+  .header_nav .width_h .logo > a {
     display: block;
     background: url(../img/logo_pc.png) no-repeat left;
     width: 142px;
     height: 35px;
     background-size: contain;
-    margin-right: 80px;
+    margin-right: 110px;
   }
-  .header_nav nav > ul > li ~ li {
+  .header_nav .width_h li {
     line-height: 80px;
     position: relative;
     width: 12%;
     text-align: center;
   }
-  .header_nav nav > ul > li.lang_pop select {
+  .header_nav .width_h .lang_pop select {
     width: 50px;
     background: none;
     font-size: 16px;
@@ -713,8 +713,17 @@ footer #shop {
     cursor: pointer;
     color: #fff;
   }
-  .Swiper2 {
-    height: 100%;
+  .slide_size1 img {
+    height: 225px;
+  }
+  .content1 .slide_size1 span.ct1_mw {
+    width: 225px;
+  }
+  .slide_size1 a:hover span.ct1_hw {
+    width: 225px;
+  }
+  .content1 .slide_size1 span.ct1_hw {
+    display: none;
   }
   .content3 .service {
     width: 98%;
@@ -752,4 +761,23 @@ footer #shop {
   .content3 .service .Question .q_box a span.ct3_q_txt {
     width: 95%;
   }
+}
+/* //1281~1400 */
+
+@media screen and (min-width:801px) and (max-width:1280px) {
+  .width_h {
+    width: 96%;
+  }
+  .header_nav .width_h .logo > a {
+    display: block;
+    background: url(../img/logo_pc.png) no-repeat left;
+    width: 142px;
+    height: 35px;
+    background-size: contain;
+    margin-right: 50px;
+  }
+}
+/* //801~1280 */
+@media screen and (max-width:800px) {
+
 }
