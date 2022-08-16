@@ -749,4 +749,7 @@ footer #shop {
   .footer_3 .sns_wrap {
     width: 65%;
   }
+  .content3 .service .Question .q_box a span.ct3_q_txt {
+    width: 95%;
+  }
 }
