@@ -19,9 +19,6 @@ mainmenu.mouseleave(function () {
     .animate({ height: headerHeight + "px" }, 300);
 });
 
-
-
-
 //swiper
 var swiper = new Swiper(".Swiper1", {
   spaceBetween: 0,
@@ -41,24 +38,83 @@ var swiper = new Swiper(".Swiper1", {
   },
 });
 var swiper2 = new Swiper(".Swiper2", {
-  slidesPerView: 6,
-  spaceBetween: 10,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  slidesPerView: 3,
+  grid: {
+    rows: 2,
+  },
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    801: {
+      slidesPerView: 5,
+      grid:{rows: 1,},
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    },
+    1399: {
+      slidesPerView:6,
+    }
   },
 });
 var swiper3 = new Swiper(".Swiper3", {
-  slidesPerView: 6,
-  spaceBetween: 20,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  slidesPerView: 3,
+  grid: {
+    rows: 2,
+  },
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    801: {
+      slidesPerView: 5,
+      grid:{rows: 1,},
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    },
+    1399: {
+      slidesPerView:6,
+    }
   },
 });
 
-
-
-
+//top
+const btt = document.querySelector("#back_to_top");
+let scrollAmount;
+//console.log(window)
+window.addEventListener("scroll", function () {
+  scrollAmount = this.scrollY;
+  if (scrollAmount > scrollAmount / 12) {
+    btt.classList.add("visible");
+  } else {
+    btt.classList.remove("visible");
+  }
+});
+btt.addEventListener("click", function (e) {
+  e.preventDefault();
+  document
+    .querySelector(btt.getAttribute("href"))
+    .scrollIntoView({ behavior: "smooth" });
+});
+//shop
+const shop = document.querySelector("#shop");
+window.addEventListener("scroll", function () {
+  scrollAmount = this.scrollY;
+  if (scrollAmount > scrollAmount / 12) {
+    shop.classList.add("visible");
+  } else {
+    shop.classList.remove("visible");
+  }
+});
