@@ -22,6 +22,9 @@
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.header_top .m_logo {
+  display: none;
+}
 .header_top .header_link {
   width: 220px;
 }
@@ -53,7 +56,7 @@
   transition: all 1s ease-in-out;
 }
 .header_nav .width_h ul li a:hover {
-  color: rgb(255, 255, 134);
+  border-bottom: 2px solid #e0462e;
 }
 .header_nav.active {
   background: linear-gradient(
@@ -116,7 +119,8 @@
   margin-top: 27px;
 }
 .header_nav .width_h .menu_bar .hamburger {
-  padding-top: 32px;
+  box-sizing: border-box;
+  padding: 32px 5px 5px 5px;
   line-height: 80px;
   width: 30px;
   height: 20px;
@@ -770,12 +774,16 @@ footer #shop {
   }
   .header_nav .width_h .logo > a {
     display: block;
-    background: url(../img/logo_pc.png) no-repeat left;
     width: 142px;
     height: 35px;
     background-size: contain;
     margin-right: 50px;
   }
+  .header_nav .width_h ul {
+    display: none;
+  }
+
+  
 }
 /* //801~1280 */
 @media screen and (max-width:800px) {
