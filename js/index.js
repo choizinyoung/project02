@@ -5,7 +5,7 @@ var mainmenu = $(".header_nav>.width_h>ul>li"), //원뎁스 li 할당
   headerHeight = header.height(), //header높이 할당
   subMenuHeight = subMenu.height(), //subMenu 높이할당
   totalHeaderHeight = headerHeight + subMenuHeight + 200;
-  
+
 mainmenu.mouseenter(function () {
   header
     .addClass("active")
@@ -17,6 +17,24 @@ mainmenu.mouseleave(function () {
     .removeClass("active")
     .stop()
     .animate({ height: headerHeight + "px" }, 300);
+});
+
+//ham_menu
+$(".openMOgnb").click(function (e) {
+  e.preventDefault();
+  $(".hamburger_menu").addClass("on");
+});
+$(".ham_close").click(function (e) {
+  e.preventDefault();
+  $(".hamburger_menu").removeClass("on");
+});
+
+//ham_menu inner
+$(document).ready(function(){
+  $(".hm_depth2").hide();
+  $(".hm_depth1").click(function(){
+    $(this).nextAll(".hm_depth2").slideToggle(500);
+  });
 });
 
 //swiper
